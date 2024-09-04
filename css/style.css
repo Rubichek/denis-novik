@@ -1,0 +1,246 @@
+.container {
+    font-family: "Open Sans", sans-serif;
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* line-height: 0.5; */
+}
+
+ul.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    grid-gap: 40px;
+}
+
+.menu-item a {
+    font-size: 18px;
+    color: #828282;
+    text-decoration: none;
+}
+
+.menu-item.activ a,
+.menu-item a:active {
+    color: #070707;
+}
+
+.line {
+    border: 1px #828282 solid"
+}
+
+.first-screen h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 12px;
+}
+
+.first-screen img {
+    width: 100%;
+    display: block;
+}
+
+/* About */
+
+
+.about {
+    background-color: #E5E5E5;
+}
+
+.about-description {
+    padding: 100px 245px 100px 245px;
+}
+
+.about-description h2 {
+    font-size: 34px;
+}
+
+.about-description h2,
+.about-description p {
+    text-align: center;
+}
+
+.about-description p {
+    font-size: 18px;
+    margin: 0 0 30px;
+}
+
+/* End About*/
+
+
+/* rating to product */
+
+.skills-heading {
+    margin-bottom: 50px;
+}
+
+.skills-products-lists {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.skills-product-list {
+    text-align: center;
+}
+
+.skills-product p {
+    text-align: center;
+}
+
+.skills-heading h2,
+.skills-heading p {
+    text-align: center;
+}
+
+.skills-heading h2 {
+    color: #070707;
+    font-size: 34px;
+}
+
+.skills-heading p {
+    color: #070707;
+    font-size: 18px;
+}
+
+.skills-product p {
+    color: #828282;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.skills-product-rating {
+    position: relative;
+    font-size: 26px;
+    display: inline-block;
+}
+
+.skills-product-rating::before {
+    content: "★★★★★";
+    display: block;
+}
+
+
+.skills-product-rating-items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.skills-product-rating-item {
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.skills-product-rating-label {
+    flex: 0 0 20%;
+    height: 100%;
+    cursor: pointer;
+    color: #E5E5E5;
+}
+
+.skills-product-rating-label::before {
+    content: "★";
+    display: block;
+    transition: color 0.3s ease 0s;
+}
+
+.skills-product-rating-item:checked,
+.skills-product-rating-item:checked ~ .skills-product-rating-item {
+    color: #070707;
+}
+
+.skills-product-rating-label:hover,
+.skills-product-rating-label:hover ~ .skills-product-rating-label,
+.skills-product-rating-label:checked ~ .skills-product-rating-label:hover {
+    color: #070707;
+}
+
+/* end rating to product */
+
+
+
+/* portfolio */
+
+.portfolio {
+    padding-top: 100px;
+    background-color: #F6F6F6;
+}
+
+.portfolio h2 {
+    text-align: center;
+    color: #070707;
+    font-size: 34px;
+    padding-bottom: 50px;
+}
+
+.portfolio-example a {
+    text-align: center;
+    color: #070707;
+    font-size: 18px;
+    display: block;
+    padding: 40px 0 70px 0;
+}
+
+/* end portfolio */
+
+
+/* footer */
+
+.footer {
+    text-align: center;
+}
+
+.footer h2 {
+    color: #070707;
+    font-size: 34px;
+}
+
+.footer p {
+    color: #070707;
+    font-size: 18px;
+}
+
+.footer-message {
+    padding: 10px 16px;
+    background: #070707;
+    color: #Ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 22px;
+    border: none;
+    margin: 60px 0 30px;
+    cursor: pointer;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer-like {
+    text-decoration: none;
+    margin: 60px 0 100px;
+}
+
+.footer-like p,
+.footer-like a {
+    color: #828282;
+    font-size: 14px;
+}
+
+
+
+/* end footer */
